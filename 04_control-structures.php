@@ -35,14 +35,25 @@
     // }
 
     // while
-    $count = 0;
-    while($count <= 10){
-        echo $count . '<br>';
-        $count++;
-    }
+    // $count = 0;
+    // while($count <= 10){
+    //     echo $count . '<br>';
+    //     $count++;
+    // }
 
-    $roll = 0;
-    while($roll != 6){
+    // $roll = 0;
+    // while($roll != 6){
+    //     $roll = rand(1, 6);
+    //     echo '<p>You rolled a ' . $roll . '</p>';
+    //     if ($roll == 6) {
+    //         echo '<p>You win!</p>';
+    //     }
+    //     else {
+    //         echo '<p>Sorry, you didn\'t win, better luck next time!</p>';
+    //     }
+    // }
+    // do while
+    do {
         $roll = rand(1, 6);
         echo '<p>You rolled a ' . $roll . '</p>';
         if ($roll == 6) {
@@ -51,7 +62,8 @@
         else {
             echo '<p>Sorry, you didn\'t win, better luck next time!</p>';
         }
-    }
+    } while ($roll != 6);
+
     ?>
 
     <?php 
